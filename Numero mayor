@@ -1,0 +1,25 @@
+  #include <stdio.h>
+
+int main() {
+    int num1, num2, num3, num4, num5;
+
+    printf("deme cinco números para determinar cual es el mayor: %d\n"); // se Solicitan cinco números
+    scanf("%d %d %d %d %d", &num1, &num2, &num3, &num4, &num5); // se escanean todas las variables en uno solo
+    
+    int max = num1; //aqui se verifica que numero es el mayor o el mas grande que los demas 
+    if (num2 > max) {
+        max = num2;
+    }
+    if (num3 > max) {
+        max = num3;
+    }
+    if (num4 > max) {
+        max = num4;
+    }
+    if (num5 > max) {
+        max = num5;
+    }
+    printf("El máximo es: %d\n", max); //resultado que dice cual fue el numero mas grande
+
+    return 0; //fin del codigo
+} 
